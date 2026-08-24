@@ -8,8 +8,8 @@ $\textcolor{#FF4A62}{\rule{26em}{4pt}}$
 
 This beginner-friendly project teaches the Python foundations needed before working with Generative AI (GenAI). The lessons use short explanations, relatable examples, and runnable Jupyter notebooks. Follow them in order, practise the code, and build the confidence to read, write, and debug Python used in AI projects.
 
-> **Created by:** <a href="https://github.com/Thirumurugan240" target="_blank" rel="noopener">Thirumurugan</a>  
-> **Source:** <a href="https://github.com/Thirumurugan240/Python_Concepts" target="_blank" rel="noopener">Python Concepts</a>
+> **Created by:** <a href="https://github.com/Thirumurugan240" target="_blank">Thirumurugan</a>  
+> **Source:** <a href="https://github.com/Thirumurugan240/Python_Concepts" target="_blank">Python Concepts</a>
 
 ## Purpose
 
@@ -56,7 +56,7 @@ Install and configure the tools in this order.
 
 ### 1. Install Python
 
-Download Python from <a href="https://www.python.org/downloads/" target="_blank" rel="noopener">python.org</a>. On Windows, select **Add Python to PATH** during installation.
+Download Python from <a href="https://www.python.org/downloads/" target="_blank">python.org</a>. On Windows, select **Add Python to PATH** during installation.
 
 Verify the installation:
 
@@ -69,7 +69,7 @@ If `python` is not recognised on macOS or Linux, try `python3`.
 
 ### 2. Install Visual Studio Code
 
-Download and install <a href="https://code.visualstudio.com/" target="_blank" rel="noopener">Visual Studio Code</a>.
+Download and install <a href="https://code.visualstudio.com/" target="_blank">Visual Studio Code</a>.
 
 ### 3. Install VS Code Extensions
 
@@ -227,11 +227,11 @@ This same pattern scales to GenAI projects, where prompt templates, model calls,
 
 | Resource | Link |
 |---|---|
-| Python documentation | <a href="https://docs.python.org/3/" target="_blank" rel="noopener">docs.python.org</a> |
-| Python downloads | <a href="https://www.python.org/downloads/" target="_blank" rel="noopener">python.org/downloads</a> |
-| VS Code Python guide | <a href="https://code.visualstudio.com/docs/python/python-tutorial" target="_blank" rel="noopener">code.visualstudio.com/docs/python/python-tutorial</a> |
-| Jupyter in VS Code | <a href="https://code.visualstudio.com/docs/datascience/jupyter-notebooks" target="_blank" rel="noopener">code.visualstudio.com/docs/datascience/jupyter-notebooks</a> |
-| Source repository | <a href="https://github.com/Thirumurugan240/Python_Concepts" target="_blank" rel="noopener">github.com/Thirumurugan240/Python_Concepts</a> |
+| Python documentation | <a href="https://docs.python.org/3/" target="_blank">docs.python.org</a> |
+| Python downloads | <a href="https://www.python.org/downloads/" target="_blank">python.org/downloads</a> |
+| VS Code Python guide | <a href="https://code.visualstudio.com/docs/python/python-tutorial" target="_blank">code.visualstudio.com/docs/python/python-tutorial</a> |
+| Jupyter in VS Code | <a href="https://code.visualstudio.com/docs/datascience/jupyter-notebooks" target="_blank">code.visualstudio.com/docs/datascience/jupyter-notebooks</a> |
+| Source repository | <a href="https://github.com/Thirumurugan240/Python_Concepts" target="_blank">github.com/Thirumurugan240/Python_Concepts</a> |
 
 ---
 
@@ -247,4 +247,4 @@ Feel free to fork this repository, improve the content, and share your knowledge
 
 ### **Shasu Vathanan - GEN AI - Product Manager**
 
-<a href="https://shasuvathanan.com" target="_blank" rel="noopener">SHASUVATHANAN.COM</a> &nbsp;&#8226;&nbsp; <a href="https://www.linkedin.com/in/shasuvathanan" target="_blank" rel="noopener">LinkedIn</a>
+<a href="https://shasuvathanan.com" target="_blank">SHASUVATHANAN.COM</a> &nbsp;&#8226;&nbsp; <a href="https://www.linkedin.com/in/shasuvathanan" target="_blank">LinkedIn</a>
