@@ -1,0 +1,44 @@
+# Phase-003 — keep the repository to source, docs, and lightweight evidence only.
+
+# Virtual environments (machine-specific — recreate from each project's README)
+venv/
+.venv/
+env/
+ENV/
+
+# Python-generated files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Screen recordings and other large media.
+# The bot demonstration videos are 80-100 MB each. GitHub warns above 50 MB and
+# rejects above 100 MB, so recordings stay local and are shared out of band.
+*.mp4
+*.mov
+*.avi
+*.mkv
+PyAutoGUI Automation/Assignment-1-PyAutoGUI_Weather_Data/Audio/
+
+# Private data — never commit.
+# contacts.xlsx holds real phone numbers; the browser profile holds a live
+# WhatsApp session; generated reports and screenshots can contain personal data.
+contacts.xlsx
+.whatsapp_profile/
+Playwright Automation/Playwright Assignment/output/
+
+# Test and type-check caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Editors and operating systems
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Local environment variables
+.env
+.env.*

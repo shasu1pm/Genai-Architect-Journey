@@ -231,10 +231,20 @@ This same pattern scales to GenAI projects, where prompt templates, model calls,
 
 ---
 
+$\textcolor{#FF4A62}{\rule{20em}{2pt}}$
+
 ## Contributing
 
 Feel free to fork this repository, improve the content, and share your knowledge with the community.
 
-**Maintained by:**
+---
 
-**Shasu Vathanan** **•** **Gen AI Product Manager**
+<div align="center">
+
+**Created and Maintained by**
+
+### Shasu Vathanan - GEN AI - Product Manager
+
+[SHASUVATHANAN.COM](https://shasuvathanan.com) &nbsp;&#8226;&nbsp; [LinkedIn](https://www.linkedin.com/in/shasuvathanan)
+
+</div>

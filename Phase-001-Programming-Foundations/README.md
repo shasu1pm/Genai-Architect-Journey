@@ -35,3 +35,21 @@ Mark: 59 -> Grade: E
 Invalid input is handled without crashing. Non-numeric values produce a clear
 request to enter a number, while values outside 0–100 (including non-finite
 values such as `nan`) produce a clear range error.
+
+$\textcolor{#FF4A62}{\rule{20em}{2pt}}$
+
+## Contributing
+
+Feel free to fork this repository, improve the content, and share your knowledge with the community.
+
+---
+
+<div align="center">
+
+**Created and Maintained by**
+
+### Shasu Vathanan - GEN AI - Product Manager
+
+[SHASUVATHANAN.COM](https://shasuvathanan.com) &nbsp;&#8226;&nbsp; [LinkedIn](https://www.linkedin.com/in/shasuvathanan)
+
+</div>

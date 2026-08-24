@@ -1,0 +1,22 @@
+CURRENT WEATHER - BENGALURU
+========================================
+
+Captured Date and Time : 31-07-2026 09:40 PM
+
+Temperature            : 23°C
+RealFeel                : 21°
+Condition               : Thunderstorm
+
+Wind                    : WSW 26 km/h
+Wind Gusts              : 54 km/h
+Humidity                : 79%
+Indoor Humidity         : 79% (Very Humid)
+Dew Point               : 20° C
+
+Pressure                : 1011 mb
+Cloud Cover             : 97%
+Visibility              : 10 km
+Cloud Ceiling           : 1200 m
+
+Source:
+https://www.accuweather.com/en/in/bengaluru/204108/current-weather/204108

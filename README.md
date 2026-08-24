@@ -1,7 +1,19 @@
+<div align="center">
+
+<img src="1-Dragon-Motivation-Logo.png" alt="Shasu Vathanan - GEN AI - Product Manager" width="110">
+
 # My Generative AI Journey and Its Phases
+
+**Shasu Vathanan - GEN AI - Product Manager**
+
+[![Website](https://img.shields.io/badge/Website-SHASUVATHANAN.COM-FF4A62?style=for-the-badge)](https://shasuvathanan.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-shasuvathanan-031273?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/shasuvathanan)
+
+</div>
+
 **`Journey`** &nbsp;›&nbsp; **`Phase`**
 
-$\textcolor{#FF5152}{\rule{26em}{4pt}}$
+$\textcolor{#FF4A62}{\rule{26em}{4pt}}$
 
 **A structured, hands-on path from Generative AI fundamentals to production-ready implementation.**
 
@@ -59,8 +71,19 @@ GenAI Architect Journey
 | [Environment Setup](#environment-setup) | Visual Studio Code · Python · Git · GitHub · Ollama · Hugging Face |
 | [Optional Tools](#optional-tools) | Claude · Windsurf · Google Colab |
 
+### 🚀 The Phases
 
-$\textcolor{#FF5152}{\rule{20em}{2pt}}$
+Each phase is a self-contained body of work with its own README, code, and documentation.
+
+| Phase | Focus | What was built | Document |
+| :-- | :-- | :-- | :-- |
+| [**Phase-001-Programming-Foundations**](./Phase-001-Programming-Foundations/) | Python fundamentals | Student Grade System — a terminal program with full input validation | [📄 PDF](./Phase-001-Programming-Foundations/Student%20Grade%20System.pdf) |
+| [**Phase-002-GenAI-Python-Toolkit**](./Phase-002-GenAI-Python-Toolkit/) | Mandatory Python for Gen AI | 14 notebooks covering the Python needed before any AI library | [📄 PDF](./Phase-002-GenAI-Python-Toolkit/Mandatory%20Python%20Concepts%20for%20Generative%20AI.pdf) |
+| [**Phase-003-Robotic-Process-Automation-(RPA)**](./Phase-003-Robotic-Process-Automation-%28RPA%29/) | RPA — Robotic Process Automation | Desktop bots with PyAutoGUI and browser bots with Playwright | [📄 PDF](./Phase-003-Robotic-Process-Automation-%28RPA%29/RPA%20-%20Robotic%20Process%20Automation.pdf) |
+| [**Phase-004-FastAPI-And-Streamlit**](./Phase-004-FastAPI-And-Streamlit/) | Interfaces and APIs | Streamlit web apps and FastAPI services — turning scripts into products | [📄 PDFs](./Phase-004-FastAPI-And-Streamlit/) |
+
+
+$\textcolor{#FF4A62}{\rule{20em}{2pt}}$
 
 # Foundations
 
@@ -467,7 +490,7 @@ How you learn this field determines how far you get. This section describes an a
 - Publish continuously — the repository is the portfolio.
 - Consistency outperforms intensity over any meaningful timeframe.
 
-$\textcolor{#FF5152}{\rule{20em}{2pt}}$
+$\textcolor{#FF4A62}{\rule{20em}{2pt}}$
 
 # Environment Setup
 
@@ -916,7 +939,7 @@ Paste your access token when prompted. A confirmation message indicates success.
 | Downloading very large models first | Start small and scale up when you have a reason to |
 | Ignoring model licences | Always confirm the licence permits your intended use |
 
-$\textcolor{#FF5152}{\rule{20em}{2pt}}$
+$\textcolor{#FF4A62}{\rule{20em}{2pt}}$
 
 # Optional Tools
 
@@ -1213,8 +1236,7 @@ drive.mount("/content/drive")
 | Leaving a GPU runtime idle | Disconnect when you have finished |
 | Never exporting notebooks | Save to GitHub so the work becomes part of your portfolio |
 
-$\textcolor{#FF5152}{\rule{20em}{2pt}}$
-
+$\textcolor{#FF4A62}{\rule{20em}{2pt}}$
 
 ## Contributing
 
@@ -1222,6 +1244,12 @@ Feel free to fork this repository, improve the content, and share your knowledge
 
 ---
 
-**Created and Maintained by:**
+<div align="center">
 
-### **Shasu Vathanan** &nbsp;•&nbsp; **Gen AI Product Manager**
+**Created and Maintained by**
+
+### Shasu Vathanan - GEN AI - Product Manager
+
+[SHASUVATHANAN.COM](https://shasuvathanan.com) &nbsp;&#8226;&nbsp; [LinkedIn](https://www.linkedin.com/in/shasuvathanan)
+
+</div>
