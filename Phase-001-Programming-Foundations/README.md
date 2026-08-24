@@ -1,5 +1,9 @@
 # Student Grade System
 
+**Shasu Vathanan - GEN AI - Product Manager**
+
+$\textcolor{#FF4A62}{\rule{26em}{4pt}}$
+
 A terminal-based Python program that converts a mark from 0 to 100 into a
 letter grade.
 
@@ -44,12 +48,8 @@ Feel free to fork this repository, improve the content, and share your knowledge
 
 ---
 
-<div align="center">
+**Created and Maintained by:**
 
-**Created and Maintained by**
+### **Shasu Vathanan - GEN AI - Product Manager**
 
-### Shasu Vathanan - GEN AI - Product Manager
-
-[SHASUVATHANAN.COM](https://shasuvathanan.com) &nbsp;&#8226;&nbsp; [LinkedIn](https://www.linkedin.com/in/shasuvathanan)
-
-</div>
+<a href="https://shasuvathanan.com" target="_blank" rel="noopener">SHASUVATHANAN.COM</a> &nbsp;&#8226;&nbsp; <a href="https://www.linkedin.com/in/shasuvathanan" target="_blank" rel="noopener">LinkedIn</a>

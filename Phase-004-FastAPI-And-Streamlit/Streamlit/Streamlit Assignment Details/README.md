@@ -1,15 +1,6 @@
-<div align="center">
-
-<img src="../../../1-Dragon-Motivation-Logo.png" alt="Shasu Vathanan - GEN AI - Product Manager" width="88">
-
 # Student Grade App
 
 **Shasu Vathanan - GEN AI - Product Manager**
-
-[![Website](https://img.shields.io/badge/Website-SHASUVATHANAN.COM-FF4A62?style=for-the-badge)](https://shasuvathanan.com)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-shasuvathanan-031273?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/shasuvathanan)
-
-</div>
 
 $\textcolor{#FF4A62}{\rule{26em}{4pt}}$
 
@@ -145,12 +136,6 @@ The running app, captured at three different marks:
 | 85 | B | [grade-85-B.png](screenshots/grade-85-B.png) |
 | 59 | E | [grade-59-E.png](screenshots/grade-59-E.png) |
 
-<div align="center">
-
-<img src="screenshots/grade-90-A.png" alt="Student Grade App showing mark 90 and grade A" width="640">
-
-</div>
-
 ---
 
 ## Build checklist
@@ -177,12 +162,8 @@ Feel free to fork this repository, improve the content, and share your knowledge
 
 ---
 
-<div align="center">
+**Created and Maintained by:**
 
-**Created and Maintained by**
+### **Shasu Vathanan - GEN AI - Product Manager**
 
-### Shasu Vathanan - GEN AI - Product Manager
-
-[SHASUVATHANAN.COM](https://shasuvathanan.com) &nbsp;•&nbsp; [LinkedIn](https://www.linkedin.com/in/shasuvathanan)
-
-</div>
+<a href="https://shasuvathanan.com" target="_blank" rel="noopener">SHASUVATHANAN.COM</a> &nbsp;&#8226;&nbsp; <a href="https://www.linkedin.com/in/shasuvathanan" target="_blank" rel="noopener">LinkedIn</a>

@@ -1,15 +1,6 @@
-<div align="center">
-
-<img src="../../1-Dragon-Motivation-Logo.png" alt="Shasu Vathanan - GEN AI - Product Manager" width="88">
-
 # Streamlit — From Python Script to Interactive MVP
 
 **Shasu Vathanan - GEN AI - Product Manager**
-
-[![Website](https://img.shields.io/badge/Website-SHASUVATHANAN.COM-FF4A62?style=for-the-badge)](https://shasuvathanan.com)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-shasuvathanan-031273?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/shasuvathanan)
-
-</div>
 
 $\textcolor{#FF4A62}{\rule{26em}{4pt}}$
 
@@ -149,12 +140,8 @@ Feel free to fork this repository, improve the content, and share your knowledge
 
 ---
 
-<div align="center">
+**Created and Maintained by:**
 
-**Created and Maintained by**
+### **Shasu Vathanan - GEN AI - Product Manager**
 
-### Shasu Vathanan - GEN AI - Product Manager
-
-[SHASUVATHANAN.COM](https://shasuvathanan.com) &nbsp;•&nbsp; [LinkedIn](https://www.linkedin.com/in/shasuvathanan)
-
-</div>
+<a href="https://shasuvathanan.com" target="_blank" rel="noopener">SHASUVATHANAN.COM</a> &nbsp;&#8226;&nbsp; <a href="https://www.linkedin.com/in/shasuvathanan" target="_blank" rel="noopener">LinkedIn</a>
