@@ -69,6 +69,7 @@ Each phase is a self-contained body of work with its own README, code, and docum
 | [**Phase-002-GenAI-Python-Toolkit**](./Phase-002-GenAI-Python-Toolkit/) | Mandatory Python for Gen AI | 14 notebooks covering the Python needed before any AI library | [📄 PDF](./Phase-002-GenAI-Python-Toolkit/Mandatory%20Python%20Concepts%20for%20Generative%20AI.pdf) |
 | [**Phase-003-Robotic-Process-Automation-(RPA)**](./Phase-003-Robotic-Process-Automation-%28RPA%29/) | RPA — Robotic Process Automation | Desktop bots with PyAutoGUI and browser bots with Playwright | [📄 PDF](./Phase-003-Robotic-Process-Automation-%28RPA%29/RPA%20-%20Robotic%20Process%20Automation.pdf) |
 | [**Phase-004-FastAPI-And-Streamlit**](./Phase-004-FastAPI-And-Streamlit/) | Interfaces and APIs | Streamlit web apps and FastAPI services — turning scripts into products | [📄 PDFs](./Phase-004-FastAPI-And-Streamlit/) |
+| [**Phase-005-LLM-Foundations-and-Practical-Tools**](./Phase-005-LLM-Foundations-and-Practical-Tools/) | LLM foundations and practical tools | Open and closed models, API access, benchmarks, AI tools, Hugging Face, and local inference with Ollama | [📄 PDF](./Phase-005-LLM-Foundations-and-Practical-Tools/LLM-Foundations-and-Practical-Tools.pdf) |
 
 $\textcolor{#FF4A62}{\rule{20em}{2pt}}$
 
