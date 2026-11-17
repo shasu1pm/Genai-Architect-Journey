@@ -1,0 +1,11 @@
+Package prepared for Shasu Vathanan.
+
+Custom user-supplied logos:
+- github-custom.png / github-custom.svg
+- website-personal-logo.png / website-personal-logo.svg
+
+Other platform logos sourced from the previously prepared colorful logo package already available in this workspace:
+- linkedin
+- huggingface
+- youtube
+- x

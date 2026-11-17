@@ -1,0 +1,16 @@
+# Phase-006 — keep the repository to source, docs, and sample data only.
+
+# Virtual environments (machine-specific — recreate from requirements.txt)
+venv/
+.venv/
+env/
+
+# Python-generated files
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Local environment variables — real keys never leave this machine
+.env
+.env.*
+!.env.example

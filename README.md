@@ -1,3 +1,24 @@
+<!-- brand:header:start -->
+<p align="center">
+  <img src="zz-Brand-Assets/Dragon-Motivation-Logo.png" alt="Dragon Motivation logo" height="84">
+  &nbsp;&nbsp;
+  <img src="zz-Brand-Assets/NeGot-My-AI-Avatar.png" alt="NeGot - my AI avatar" height="76">
+</p>
+<p align="center">
+  <img src="zz-Brand-Assets/SHASUVATHANAN-NAME.png" alt="SHASU VATHANAN" width="420">
+  <br><br>
+  <img src="zz-Brand-Assets/ShasuVathanan-GEN%20AI-Product-Manager.png" alt="Shasu Vathanan - GEN AI - Product Manager" width="460">
+  <br><br>
+  <a href="https://SHASUVATHANAN.COM">SHASUVATHANAN.COM</a> &nbsp;&#8226;&nbsp; <a href="https://www.linkedin.com/in/shasuvathanan">LinkedIn</a> &nbsp;&#8226;&nbsp; <a href="https://github.com/shasu1pm/Genai-Architect-Journey">GitHub</a>
+</p>
+<!-- brand:header:end -->
+
+<!-- brand:hero:start -->
+<p align="center">
+  <a href="https://shasuvathanan.com"><img src="zz-Brand-Assets/SHASUVATHANAN-THE-ONE-NAME.png" alt="SHASU — The One Name" width="100%"></a>
+</p>
+<!-- brand:hero:end -->
+
 # My Generative AI Journey and Its Phases
 **`Journey`** &nbsp;›&nbsp; **`Phase`**
 
@@ -63,13 +84,21 @@ GenAI Architect Journey
 
 Each phase is a self-contained body of work with its own README, code, and documentation.
 
-| Phase | Focus | What was built | Document |
+| Phase | Focus | What was built | Documents |
 | :-- | :-- | :-- | :-- |
-| [**Phase-001-Programming-Foundations**](./Phase-001-Programming-Foundations/) | Python fundamentals | Student Grade System — a terminal program with full input validation | [📄 PDF](./Phase-001-Programming-Foundations/Student%20Grade%20System.pdf) |
-| [**Phase-002-GenAI-Python-Toolkit**](./Phase-002-GenAI-Python-Toolkit/) | Mandatory Python for Gen AI | 14 notebooks covering the Python needed before any AI library | [📄 PDF](./Phase-002-GenAI-Python-Toolkit/Mandatory%20Python%20Concepts%20for%20Generative%20AI.pdf) |
-| [**Phase-003-Robotic-Process-Automation-(RPA)**](./Phase-003-Robotic-Process-Automation-%28RPA%29/) | RPA — Robotic Process Automation | Desktop bots with PyAutoGUI and browser bots with Playwright | [📄 PDF](./Phase-003-Robotic-Process-Automation-%28RPA%29/RPA%20-%20Robotic%20Process%20Automation.pdf) |
-| [**Phase-004-FastAPI-And-Streamlit**](./Phase-004-FastAPI-And-Streamlit/) | Interfaces and APIs | Streamlit web apps and FastAPI services — turning scripts into products | [📄 PDFs](./Phase-004-FastAPI-And-Streamlit/) |
-| [**Phase-005-LLM-Foundations-and-Practical-Tools**](./Phase-005-LLM-Foundations-and-Practical-Tools/) | LLM foundations and practical tools | Open and closed models, API access, benchmarks, AI tools, Hugging Face, and local inference with Ollama | [📄 PDF](./Phase-005-LLM-Foundations-and-Practical-Tools/LLM-Foundations-and-Practical-Tools.pdf) |
+| [**Phase-001-Programming-Foundations**](./Phase-001-Programming-Foundations/) | Python fundamentals | Student Grade System — a terminal program with full input validation | [📄 PDF](./Phase-001-Programming-Foundations/Student%20Grade%20System.pdf) · [📘 Explainer](./Phase-001-Programming-Foundations/Programming-Foundations-Explainer.pdf) |
+| [**Phase-002-GenAI-Python-Toolkit**](./Phase-002-GenAI-Python-Toolkit/) | Mandatory Python for Gen AI | 14 notebooks covering the Python needed before any AI library | [📄 PDF](./Phase-002-GenAI-Python-Toolkit/Mandatory%20Python%20Concepts%20for%20Generative%20AI.pdf) · [📘 Explainer](./Phase-002-GenAI-Python-Toolkit/GenAI-Python-Toolkit-Explainer.pdf) |
+| [**Phase-003-Robotic-Process-Automation-(RPA)**](./Phase-003-Robotic-Process-Automation-%28RPA%29/) | RPA — Robotic Process Automation | Desktop bots with PyAutoGUI and browser bots with Playwright | [📄 PDF](./Phase-003-Robotic-Process-Automation-%28RPA%29/RPA%20-%20Robotic%20Process%20Automation.pdf) · [📘 Explainer](./Phase-003-Robotic-Process-Automation-%28RPA%29/Robotic-Process-Automation-Explainer.pdf) |
+| [**Phase-004-FastAPI-And-Streamlit**](./Phase-004-FastAPI-And-Streamlit/) | Interfaces and APIs | Streamlit web apps and FastAPI services — turning scripts into products | [📄 PDFs](./Phase-004-FastAPI-And-Streamlit/) · [📘 Explainer](./Phase-004-FastAPI-And-Streamlit/FastAPI-And-Streamlit-Explainer.pdf) |
+| [**Phase-005-LLM-Foundations-and-Practical-Tools**](./Phase-005-LLM-Foundations-and-Practical-Tools/) | LLM foundations and practical tools | Open and closed models, API access, benchmarks, AI tools, Hugging Face, and local inference with Ollama | [📄 PDFs (3 parts)](./Phase-005-LLM-Foundations-and-Practical-Tools/) · [📘 Explainer](./Phase-005-LLM-Foundations-and-Practical-Tools/LLM-Foundations-and-Practical-Tools-Explainer.pdf) |
+| [**Phase-006-LangChain-Ecosystem**](./Phase-006-LangChain-Ecosystem/) | LangChain building blocks | 9 notebooks — loaders, splitters, embeddings, FAISS vector store, retrievers, chains, LangSmith tracing, and model integration with OpenAI, Ollama, Claude and Gemini | [📄 PDFs](./Phase-006-LangChain-Ecosystem/) · [📘 Explainer](./Phase-006-LangChain-Ecosystem/LangChain-Ecosystem-Explainer.pdf) |
+| [**Phase-007-RAG-Introduction**](./Phase-007-RAG-Introduction/) | Retrieval-Augmented Generation | 6 notebooks on RAG and its types (Self, Corrective, Fusion, BM25 + rerank) and three runnable RAG demos, including a PDF question-answering app | [📘 Explainer](./Phase-007-RAG-Introduction/RAG-Introduction-Explainer.pdf) |
+
+### 🧭 Companion Guides
+
+| Guide | Focus | What it contains | Document |
+| :-- | :-- | :-- | :-- |
+| [**Transformer-Explorer-Guide**](./Transformer-Explorer-Guide/) | How a Transformer produces the next token | A standalone offline HTML playground and 20 illustrated lessons, from tokens and attention to temperature and sampling | [📄 PDFs (2 parts)](./Transformer-Explorer-Guide/) · [📘 Explainer](./Transformer-Explorer-Guide/Transformer-Explorer-Explainer.pdf) |
 
 $\textcolor{#FF4A62}{\rule{20em}{2pt}}$
 
@@ -1237,3 +1266,32 @@ Feel free to fork this repository, improve the content, and share your knowledge
 ### **Shasu Vathanan - GEN AI - Product Manager**
 
 <a href="https://shasuvathanan.com" target="_blank">SHASUVATHANAN.COM</a> &nbsp;&#8226;&nbsp; <a href="https://www.linkedin.com/in/shasuvathanan" target="_blank">LinkedIn</a>
+
+<!-- brand:footer:start -->
+<!-- brand:social:start -->
+<p align="center">
+  <a href="https://shasuvathanan.com"><img src="zz-Brand-Assets/Social-Media-Logos/PNG/website-personal-logo.png" alt="Website" title="Website" height="24"></a>
+  &nbsp;
+  <a href="mailto:shasu1pm@gmail.com"><img src="zz-Brand-Assets/Social-Media-Logos/PNG/Gmail_Logo.svg" alt="Email" title="Email" height="24"></a>
+  &nbsp;
+  <a href="https://linkedin.com/in/shasuvathanan"><img src="zz-Brand-Assets/Social-Media-Logos/PNG/linkedin.png" alt="LinkedIn" title="LinkedIn" height="24"></a>
+  &nbsp;
+  <a href="https://github.com/shasu1pm"><img src="zz-Brand-Assets/Social-Media-Logos/PNG/github-custom.png" alt="GitHub" title="GitHub" height="24"></a>
+  &nbsp;
+  <a href="https://huggingface.co/Shasuvathanan"><img src="zz-Brand-Assets/Social-Media-Logos/PNG/huggingface.png" alt="Hugging Face" title="Hugging Face" height="24"></a>
+  &nbsp;
+  <a href="https://www.youtube.com/@ShasuVathanan"><img src="zz-Brand-Assets/Social-Media-Logos/PNG/youtube.png" alt="YouTube" title="YouTube" height="24"></a>
+  &nbsp;
+  <a href="https://x.com/shasuvathanan"><img src="zz-Brand-Assets/Social-Media-Logos/PNG/x.png" alt="X (Twitter)" title="X (Twitter)" height="24"></a>
+  &nbsp;
+  <a href="https://higgsfield.ai/@shasuvathanan"><img src="zz-Brand-Assets/Social-Media-Logos/PNG/Higgsfield_AI.png" alt="Higgsfield AI" title="Higgsfield AI" height="24"></a>
+  <br>
+  <sub><b>Connect:</b> <a href="https://shasuvathanan.com">Website</a> &nbsp;&#8226;&nbsp; <a href="mailto:shasu1pm@gmail.com">Email</a> &nbsp;&#8226;&nbsp; <a href="https://linkedin.com/in/shasuvathanan">LinkedIn</a> &nbsp;&#8226;&nbsp; <a href="https://github.com/shasu1pm">GitHub</a> &nbsp;&#8226;&nbsp; <a href="https://huggingface.co/Shasuvathanan">Hugging Face</a> &nbsp;&#8226;&nbsp; <a href="https://www.youtube.com/@ShasuVathanan">YouTube</a> &nbsp;&#8226;&nbsp; <a href="https://x.com/shasuvathanan">X (Twitter)</a> &nbsp;&#8226;&nbsp; <a href="https://higgsfield.ai/@shasuvathanan">Higgsfield AI</a></sub>
+</p>
+<!-- brand:social:end -->
+<p align="center">
+  <img src="zz-Brand-Assets/NeGot-My-AI-Avatar.png" alt="NeGot - my AI avatar" height="56">
+  <br>
+  <sub><b>Shasu Vathanan - GEN AI - Product Manager</b> &nbsp;&#8226;&nbsp; NeGot, my AI avatar &nbsp;&#8226;&nbsp; <a href="zz-Brand-Assets/">Brand assets</a></sub>
+</p>
+<!-- brand:footer:end -->
