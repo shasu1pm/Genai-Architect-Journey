@@ -16,7 +16,29 @@ $\textcolor{#FF4A62}{\rule{26em}{4pt}}$
 
 **The single home of the official brand assets — and the tools that apply them to every README, notebook, PDF and web page in this repository.**
 
-📄 **Brand guide:** [Brand-Guidelines.pdf](./Brand-Guidelines.pdf) — the assets, palette and usage rules in a 3-page branded document.
+📄 **Brand guide:** [Brand-Guidelines.pdf](./Brand-Guidelines.pdf) — the assets, official links, palette and usage rules in a 4-page branded document.
+
+---
+
+## Folder map
+
+```text
+zz-Brand-Assets/
+├── README.md                                  ← this guide
+├── Brand-Guidelines.pdf                       ← the brand in 4 pages (assets, links, colour, usage)
+├── Dragon-Motivation-Logo.png                 ← personal emblem
+├── NeGot-My-AI-Avatar.png                     ← NeGot, my AI avatar
+├── SHASUVATHANAN-NAME.png                     ← name lockup
+├── ShasuVathanan-GEN AI-Product-Manager.png   ← brand strip
+├── SHASUVATHANAN-THE-ONE-NAME.png             ← hero banner (root README)
+├── Social-Media-Logos/                        ← eight official links: PNG/, SVG/, Source-Links/  → see its README
+└── pdf-kit/                                   ← the brand toolkit and explainer sources            → see its README
+```
+
+| Sub-folder | Guide |
+| :-- | :-- |
+| [Social-Media-Logos/](./Social-Media-Logos/) | [README](./Social-Media-Logos/README.md) — every official link, its logo, vector file and shortcut, and where it appears |
+| [pdf-kit/](./pdf-kit/) | [README](./pdf-kit/README.md) — run order of all tools, the explainer index and source format, how to add a folder |
 
 ---
 
@@ -31,7 +53,7 @@ $\textcolor{#FF4A62}{\rule{26em}{4pt}}$
 | [SHASUVATHANAN-THE-ONE-NAME.png](./SHASUVATHANAN-THE-ONE-NAME.png) | Hero banner — "The One Name" | 1280 × 320 px | Root README, full width directly above the main title |
 
 > [!IMPORTANT]
-> These four files are the only copies in the repository. Reference them from this folder — never copy, rename, resize, redraw or recolour them. PDF and web tools downscale the images **in memory** while embedding, so documents stay light and the source files stay untouched.
+> These five files are the only copies in the repository. Reference them from this folder — never copy, rename, resize, redraw or recolour them. PDF and web tools downscale the images **in memory** while embedding, so documents stay light and the source files stay untouched.
 
 ---
 
@@ -44,7 +66,12 @@ $\textcolor{#FF4A62}{\rule{26em}{4pt}}$
 | [`pdf-kit/build_explainers.py`](./pdf-kit/build_explainers.py) + [`pdf-kit/explainers/`](./pdf-kit/explainers/) | Builds one `<Folder-Base>-Explainer.pdf` per phase and sub-project folder from a short Markdown source per folder | `python zz-Brand-Assets/pdf-kit/build_explainers.py` |
 | [`pdf-kit/apply_covers.py`](./pdf-kit/apply_covers.py) | Gives every rebuilt PDF the same brand cover as the explainers | `python zz-Brand-Assets/pdf-kit/apply_covers.py` |
 | [`pdf-kit/rebrand_existing.py`](./pdf-kit/rebrand_existing.py) | Re-brands existing PDFs: replaces only the old header and footer bands, never the body pages; splits PDFs over 15 pages into parts | `python zz-Brand-Assets/pdf-kit/rebrand_existing.py` |
-| [`pdf-kit/apply_brand_markdown.py`](./pdf-kit/apply_brand_markdown.py) | Adds the brand header/footer to every `.md` and the brand cells to every notebook; a second run changes nothing | `python zz-Brand-Assets/pdf-kit/apply_brand_markdown.py .` |
+| [`pdf-kit/apply_brand_markdown.py`](./pdf-kit/apply_brand_markdown.py) | Adds the brand header/footer to every `.md` and the brand cells to every notebook; a second run changes nothing. Private branding-instruction files are always skipped | `python zz-Brand-Assets/pdf-kit/apply_brand_markdown.py .` |
+| [`pdf-kit/social.py`](./pdf-kit/social.py) | Single source of truth for the eight official links and their logos (`open_logo()` renders SVG in memory) | imported by every tool |
+| [`pdf-kit/build_spotify_sample.py`](./pdf-kit/build_spotify_sample.py) | Rebuilds the Phase-007 RAG sample PDF from its verbatim text (`pdf-kit/sources/`) and checks every word survives | `python zz-Brand-Assets/pdf-kit/build_spotify_sample.py` |
+| [`pdf-kit/build_catalog_sample.py`](./pdf-kit/build_catalog_sample.py) | Rebuilds the Phase-008 product catalogue (RAG agent input) from its verbatim text (`pdf-kit/sources/`), checks every word survives and that `rag.py` still finds one chunk per product | `python zz-Brand-Assets/pdf-kit/build_catalog_sample.py` |
+| [`pdf-kit/brand_pptx_social.py`](./pdf-kit/brand_pptx_social.py) | Adds or refreshes the Connect panel on a deck's closing slide | `python zz-Brand-Assets/pdf-kit/brand_pptx_social.py <deck.pptx>` |
+| [`pdf-kit/brand_web_social.py`](./pdf-kit/brand_web_social.py) | Adds the Connect row to a bundled web page footer | `python zz-Brand-Assets/pdf-kit/brand_web_social.py <page.html>` |
 
 Requirements: Python 3.10+, `reportlab`, `pymupdf`, `pillow`; Windows fonts Calibri and Consolas.
 
@@ -63,7 +90,7 @@ Requirements: Python 3.10+, `reportlab`, `pymupdf`, `pillow`; Windows fonts Cali
 | X (Twitter) | [x.com/shasuvathanan](https://x.com/shasuvathanan) | [`x.png`](./Social-Media-Logos/PNG/x.png) |
 | Higgsfield AI | [higgsfield.ai/@shasuvathanan](https://higgsfield.ai/@shasuvathanan) | [`Higgsfield_AI.png`](./Social-Media-Logos/PNG/Higgsfield_AI.png) |
 
-These appear as a **Connect** row in every README footer, every notebook footer, every PDF cover, the Phase-005 closing slide and the Transformer Explorer web page footer. The list is kept in one place, [`pdf-kit/social.py`](./pdf-kit/social.py). Every link now has a logo. To add or change one, update `Social-Media-Logos/PNG/` and its entry in `social.py`, then rerun the tools (Markdown and notebooks: `apply_brand_markdown.py`; PDFs: `build_docs.py`, `build_explainers.py`, `build_spotify_sample.py`, `apply_covers.py`; slides: `brand_pptx_social.py`; web page: `brand_web_social.py`).
+These appear as a **Connect** row in every README footer, every notebook footer, every PDF cover, the Phase-005 closing slide and the Transformer Explorer web page footer. The list is kept in one place, [`pdf-kit/social.py`](./pdf-kit/social.py). Every link now has a logo. To add or change one, update `Social-Media-Logos/PNG/` and its entry in `social.py`, then rerun the tools (Markdown and notebooks: `apply_brand_markdown.py`; PDFs: `build_docs.py`, `build_explainers.py`, `build_spotify_sample.py`, `build_catalog_sample.py`, `apply_covers.py`; slides: `brand_pptx_social.py`; web page: `brand_web_social.py`).
 
 ---
 
@@ -80,9 +107,6 @@ Compute the relative path from the page's depth below the repository root and en
 **Brand colours:** Coral `#FF4A62` → `#FF5A45` (accents, rules, gradients) · Deep Blue `#031273` (headings, tables, emphasis) · Soft Blue `#F2F4FF` (callouts) · no black. The artwork is red on transparency, so place it on a white or light background, never on a coral fill.
 
 **Links:** [SHASUVATHANAN.COM](https://shasuvathanan.com) · [LinkedIn](https://www.linkedin.com/in/shasuvathanan) · [GitHub](https://github.com/shasu1pm/Genai-Architect-Journey)
-
-> [!NOTE]
-> The full rules live in [`Master-My-GitHub-Branding-Instruction.md`](../Master-My-GitHub-Branding-Instruction.md).
 
 $\textcolor{#FF4A62}{\rule{20em}{2pt}}$
 

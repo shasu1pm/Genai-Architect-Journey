@@ -1,0 +1,28 @@
+# AI Learning Assistant — publish source, docs and assets only.
+
+# Virtual environments and Python caches
+venv/
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+
+# Test and tool caches
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# Local environment variables — real keys never leave this machine
+.env
+.env.*
+!.env.example
+
+# Local logs and temporary files
+*.log
+*.tmp
+docs/_build/
+
+# Reference transcript — kept locally for study, never published
+*Transcript*.txt

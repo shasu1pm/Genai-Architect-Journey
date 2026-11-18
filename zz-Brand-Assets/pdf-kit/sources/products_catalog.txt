@@ -1,0 +1,62 @@
+ShopEasy Product Catalogue
+Free delivery on orders above Rs. 999. Easy 7 day returns on all products.
+Product Name: Wireless Mouse
+Product ID: P101
+Category: Electronics
+Price: Rs. 499
+Details: Silent clicks, 2.4 GHz USB receiver, 12 months battery life, works with Windows and Mac.
+Product Name: Bluetooth Headphones
+Product ID: P102
+Category: Electronics
+Price: Rs. 2999
+Details: Over-ear, active noise cancellation, 30 hours battery, built-in microphone for calls.
+Product Name: Laptop Stand
+Product ID: P103
+Category: Accessories
+Price: Rs. 1299
+Details: Aluminium stand, 6 height levels, fits laptops from 10 to 17 inches, foldable.
+Product Name: Smart Watch
+Product ID: P104
+Category: Wearables
+Price: Rs. 4999
+Details: Heart rate and SpO2 tracking, 7 days battery, water resistant, call alerts.
+Product Name: USB-C Cable
+Product ID: P105
+Category: Accessories
+Price: Rs. 299
+Details: 1 metre braided cable, 60W fast charging, data transfer up to 480 Mbps.
+Product Name: Mechanical Keyboard
+Product ID: P106
+Category: Electronics
+Price: Rs. 3499
+Details: Blue switches, RGB backlight, full size layout, detachable USB-C cable.
+Product Name: Phone Case
+Product ID: P107
+Category: Accessories
+Price: Rs. 399
+Details: Shockproof silicone case, raised edges to protect camera and screen.
+Product Name: Power Bank
+Product ID: P108
+Category: Electronics
+Price: Rs. 1499
+Details: 10000 mAh, 22.5W fast charging, charges two devices at once.
+Product Name: LED Monitor
+Product ID: P109
+Category: Electronics
+Price: Rs. 8999
+Details: 24 inch Full HD IPS panel, 75 Hz, HDMI and VGA ports, eye care mode.
+Product Name: Webcam
+Product ID: P110
+Category: Electronics
+Price: Rs. 2499
+Details: 1080p video, auto light correction, dual microphones, plug and play.
+Product Name: Yoga Mat
+Product ID: P111
+Category: Fitness
+Price: Rs. 799
+Details: 6 mm thick, anti-slip surface, lightweight with carry strap.
+Product Name: Steel Water Bottle
+Product ID: P112
+Category: Kitchen
+Price: Rs. 599
+Details: 1 litre, keeps drinks cold for 24 hours and hot for 12 hours, leak proof.

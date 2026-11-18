@@ -371,7 +371,7 @@ A genuine skill worth having — and one that demands respect for your machine's
 ```bash
 python -m venv venv
 venv\Scripts\activate
-pip install transformers torch huggingface_hub
+pip install transformers torch huggingface_hub accelerate
 ```
 
 **Pull the model:**

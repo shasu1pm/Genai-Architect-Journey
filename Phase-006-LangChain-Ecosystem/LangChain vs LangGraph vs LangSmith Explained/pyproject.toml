@@ -1,0 +1,35 @@
+[project]
+name = "ai-learning-assistant"
+version = "1.0.0"
+description = "AI Learning Assistant — LangChain, LangGraph, LangSmith, FastAPI and Python (educational project)"
+authors = [{ name = "Shasu Vathanan - GEN AI - Product Manager" }]
+readme = "README.md"
+requires-python = ">=3.10"
+# Compatible ranges. The exact versions this project was tested with are pinned in requirements.txt.
+dependencies = [
+    "langchain>=1.0,<2",
+    "langchain-core>=1.0,<2",
+    "langchain-openai>=1.0,<2",
+    "langchain-ollama>=1.0,<2",
+    "langgraph>=1.0,<2",
+    "langsmith>=0.4",
+    "fastapi>=0.115",
+    "uvicorn>=0.30",
+    "pydantic>=2.7,<3",
+    "python-dotenv>=1.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "httpx>=0.27"]
+# Only for rebuilding the diagrams and PDFs (docs/build_docs.py); also needs Google Chrome and the repository brand engine.
+docs = ["reportlab>=4", "pymupdf>=1.24", "pillow>=10"]
+
+[project.urls]
+Website = "https://shasuvathanan.com"
+Repository = "https://github.com/shasu1pm/Genai-Architect-Journey"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+addopts = "-q -p no:cacheprovider -m 'not ollama'"
+markers = ["ollama: real local-model tests; run with  python -m pytest -m ollama  (needs Ollama and qwen2.5:0.5b)"]

@@ -91,14 +91,30 @@ Each phase is a self-contained body of work with its own README, code, and docum
 | [**Phase-003-Robotic-Process-Automation-(RPA)**](./Phase-003-Robotic-Process-Automation-%28RPA%29/) | RPA — Robotic Process Automation | Desktop bots with PyAutoGUI and browser bots with Playwright | [📄 PDF](./Phase-003-Robotic-Process-Automation-%28RPA%29/RPA%20-%20Robotic%20Process%20Automation.pdf) · [📘 Explainer](./Phase-003-Robotic-Process-Automation-%28RPA%29/Robotic-Process-Automation-Explainer.pdf) |
 | [**Phase-004-FastAPI-And-Streamlit**](./Phase-004-FastAPI-And-Streamlit/) | Interfaces and APIs | Streamlit web apps and FastAPI services — turning scripts into products | [📄 PDFs](./Phase-004-FastAPI-And-Streamlit/) · [📘 Explainer](./Phase-004-FastAPI-And-Streamlit/FastAPI-And-Streamlit-Explainer.pdf) |
 | [**Phase-005-LLM-Foundations-and-Practical-Tools**](./Phase-005-LLM-Foundations-and-Practical-Tools/) | LLM foundations and practical tools | Open and closed models, API access, benchmarks, AI tools, Hugging Face, and local inference with Ollama | [📄 PDFs (3 parts)](./Phase-005-LLM-Foundations-and-Practical-Tools/) · [📘 Explainer](./Phase-005-LLM-Foundations-and-Practical-Tools/LLM-Foundations-and-Practical-Tools-Explainer.pdf) |
-| [**Phase-006-LangChain-Ecosystem**](./Phase-006-LangChain-Ecosystem/) | LangChain building blocks | 9 notebooks — loaders, splitters, embeddings, FAISS vector store, retrievers, chains, LangSmith tracing, and model integration with OpenAI, Ollama, Claude and Gemini | [📄 PDFs](./Phase-006-LangChain-Ecosystem/) · [📘 Explainer](./Phase-006-LangChain-Ecosystem/LangChain-Ecosystem-Explainer.pdf) |
+| [**Phase-006-LangChain-Ecosystem**](./Phase-006-LangChain-Ecosystem/) | LangChain building blocks | 9 notebooks — loaders, splitters, embeddings, FAISS vector store, retrievers, chains, LangSmith tracing, and model integration with OpenAI, Ollama, Claude and Gemini — plus a LangChain vs LangGraph vs LangSmith project served with FastAPI | [📄 PDFs](./Phase-006-LangChain-Ecosystem/) · [📘 Explainer](./Phase-006-LangChain-Ecosystem/LangChain-Ecosystem-Explainer.pdf) |
 | [**Phase-007-RAG-Introduction**](./Phase-007-RAG-Introduction/) | Retrieval-Augmented Generation | 6 notebooks on RAG and its types (Self, Corrective, Fusion, BM25 + rerank) and three runnable RAG demos, including a PDF question-answering app | [📘 Explainer](./Phase-007-RAG-Introduction/RAG-Introduction-Explainer.pdf) |
+| [**Phase-008-RAG-Agent-Explained**](./Phase-008-RAG-Agent-Explained/) | RAG as a tool for an AI agent | A CrewAI shopping agent for a sample online store — RAG product search over ChromaDB served as an MCP tool with four cart tools, a Streamlit chat UI and a FastAPI service | [📄 PDFs](./Phase-008-RAG-Agent-Explained/) · [📘 Explainer](./Phase-008-RAG-Agent-Explained/RAG-Agent-Explained-Explainer.pdf) |
 
 ### 🧭 Companion Guides
 
 | Guide | Focus | What it contains | Document |
 | :-- | :-- | :-- | :-- |
 | [**Transformer-Explorer-Guide**](./Transformer-Explorer-Guide/) | How a Transformer produces the next token | A standalone offline HTML playground and 20 illustrated lessons, from tokens and attention to temperature and sampling | [📄 PDFs (2 parts)](./Transformer-Explorer-Guide/) · [📘 Explainer](./Transformer-Explorer-Guide/Transformer-Explorer-Explainer.pdf) |
+
+### 📁 What every folder contains
+
+| Item | What it is |
+| :-- | :-- |
+| `README.md` | The folder guide — purpose, files, how to run, key takeaways, navigation |
+| Content PDF(s) | The project document, guide or brief for that folder (where one exists) |
+| `*-Explainer.pdf` | A short branded explainer of the folder — every phase and every sub-project has one |
+| Code, notebooks, data | The working material itself, unchanged by branding |
+
+### 🎨 Brand and toolkit
+
+| Folder | Contents |
+| :-- | :-- |
+| [zz-Brand-Assets](./zz-Brand-Assets/) | Brand images, [Brand-Guidelines.pdf](./zz-Brand-Assets/Brand-Guidelines.pdf), [official links and logos](./zz-Brand-Assets/Social-Media-Logos/) and the [brand toolkit](./zz-Brand-Assets/pdf-kit/) |
 
 $\textcolor{#FF4A62}{\rule{20em}{2pt}}$
 

@@ -9,6 +9,10 @@ Included logos:
 4. huggingface — Hugging Face logo
 5. youtube — YouTube logo
 6. x — X.com logo
+7. Higgsfield_AI — Higgsfield AI logo (PNG/Higgsfield_AI.png) for https://higgsfield.ai/@shasuvathanan
+8. Gmail_Logo — Gmail logo for shasu1pm@gmail.com (PNG/Gmail_Logo.svg — an SVG kept in the PNG folder)
+
+Full guide: README.md in this folder. Links and display order: ../pdf-kit/social.py
 
 Folder structure:
 - PNG/: Ready-to-use PNG logo files

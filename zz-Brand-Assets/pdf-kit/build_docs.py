@@ -9,9 +9,9 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from brand_pdf import (ASSETS, BLUE, CORAL, LOGO, NAME, NEGOT, STRIP, Spacer, _img, build,  # noqa: E402
+from brand_pdf import (ASSETS, BLUE, CORAL, LM, LOGO, NAME, NEGOT, RM, S, STRIP, W, Spacer, _img, build,  # noqa: E402
                        bullets, callout, code, flow, h1, h2, lead, p, small, table)
-from reportlab.platypus import Flowable, Table, TableStyle  # noqa: E402
+from reportlab.platypus import Flowable, Paragraph, Table, TableStyle  # noqa: E402
 
 REPO = Path(__file__).resolve().parents[2]
 P4 = "Phase-004-FastAPI-And-Streamlit"
@@ -193,10 +193,12 @@ def doc_phase006():
                   "embed, store, search and answer with a few lines of Python."))
     s.append(p("Phase-005-LLM-Foundations-and-Practical-Tools explained what a model is and how to run one. "
                "Phase-006-LangChain-Ecosystem puts a framework around the model: nine beginner-friendly notebooks "
-               "in two tracks, written to be run from top to bottom."))
+               "in two tracks, written to be run from top to bottom, plus a third track — the AI Learning Assistant — that "
+               "shows LangChain (build), LangGraph (orchestrate) and LangSmith (observe) working together behind a FastAPI service."))
     s += table(["Track", "Folder", "Notebooks"], [
         ["**LangChain Components**", "`Langchain-Components/`", "7 — the building blocks of a retrieval (RAG) app"],
         ["**Advanced Model Integration**", "`Langchain_Advanced_Model_Integration/`", "2 — connecting to OpenAI, Ollama, Claude and Gemini; messages"],
+        ["**LangChain vs LangGraph vs LangSmith**", "`LangChain vs LangGraph vs LangSmith Explained/`", "AI Learning Assistant — LangChain chains, a LangGraph workflow, optional LangSmith tracing, FastAPI; mock, OpenAI or Ollama"],
     ], [0.3, 0.4, 0.3])
     s += h1("The LangChain ecosystem")
     s += table(["Layer", "Package / product", "Role"], [
@@ -481,8 +483,16 @@ def doc_brand():
     s += table(["Platform", "Link", "Logo in Social-Media-Logos/PNG"],
                [[l["label"], f"`{l['url'].replace('mailto:', '')}`", f"`{l['logo']}`" if l["logo"] else "— (text link)"]
                 for l in LINKS], [0.2, 0.5, 0.3])
-    s.append(small("Every README footer, notebook footer, PDF cover, the closing slide and the web page footer carry this Connect row; the list lives in pdf-kit/social.py."))
-    s += h1("The four assets in zz-Brand-Assets/")
+    from social import logo_path
+    icons = [l for l in LINKS if logo_path(l)]
+    grid = Table([[_asset_image(logo_path(l), 26) for l in icons],
+                  [Paragraph(f"<font size=7.5>{l['label']}</font>", S["cell"]) for l in icons]],
+                 colWidths=[(W - LM - RM) / len(icons)] * len(icons))
+    grid.setStyle(TableStyle([("ALIGN", (0, 0), (-1, -1), "CENTER"), ("VALIGN", (0, 0), (-1, -1), "MIDDLE"),
+                              ("BOTTOMPADDING", (0, 0), (-1, -1), 4)]))
+    s += [grid, Spacer(1, 4)]
+    s.append(small("Every README footer, notebook footer, PDF cover, the closing slide and the web page footer carry this Connect row; the list lives in pdf-kit/social.py and the files in Social-Media-Logos/ (see its README)."))
+    s += h1("Brand assets in zz-Brand-Assets/")
     logo = _asset_image(LOGO, 62)
     negot = _asset_image(NEGOT, 70)
     name = _asset_image(NAME, 230)
@@ -494,6 +504,9 @@ def doc_brand():
               colWidths=[310, 193])
     t.setStyle(TableStyle([("VALIGN", (0, 0), (-1, -1), "MIDDLE"), ("BOTTOMPADDING", (0, 0), (-1, -1), 10)]))
     s += [t, Spacer(1, 6)]
+    s += h2("Hero banner — SHASUVATHANAN-THE-ONE-NAME.png")
+    s.append(_asset_image(ASSETS / "SHASUVATHANAN-THE-ONE-NAME.png", W - LM - RM))
+    s.append(small("1280 × 320 · root README only, full width directly above the main title, linked to the website."))
     s += callout("Use the files as they are",
                  "Reference the originals in `zz-Brand-Assets/`. Do not copy them into phase folders, create renamed or "
                  "resized copies in the repository, redraw, recolour or crop them. PDF tools may downscale in memory "
@@ -507,21 +520,23 @@ def doc_brand():
     s.append(p("The artwork is red on transparency — always place it on white or a light tint, never on a coral fill."))
     s += h1("Where the assets appear")
     s += table(["Artifact", "Brand use"], [
-        ["README / Markdown", "Logo + brand strip header with website and LinkedIn; NeGot footer with \"Back to the journey index\""],
-        ["Jupyter notebooks", "First cell: logo, brand line, badges, coral rule, kicker. Last cell: NeGot, \"Created and Maintained by\""],
-        ["PDF", "Cover: logo, name lockup, brand strip, coral hero, facts, NeGot brand block. Every page: header (logo, lockups, exact folder name, website) and footer (NeGot, brand line, links, PAGE n / N). ≤ 15 pages"],
-        ["PowerPoint / Word / Excel", "Title page or slide with the lockups; brand line in master/footer; author property = brand"],
-        ["Website and HTML pages", "Logo as site mark/favicon, lockups in header, NeGot as guide, coral + deep-blue palette"],
+        ["README / Markdown", "Logo + brand strip header with website and LinkedIn; footer with the Connect row (eight logos and links) and NeGot. Root README also shows the hero banner"],
+        ["Jupyter notebooks", "First cell: logo, brand line, badges, coral rule, kicker. Last cell: NeGot, Created and Maintained by, Connect row"],
+        ["PDF", "Cover: logo, name lockup, brand strip, coral hero, facts, NeGot brand block, CONNECT row. Every page: header (logo, lockups, exact folder name, website) and footer (NeGot, brand line, links, PAGE n / N). ≤ 15 pages. One Explainer PDF per folder"],
+        ["PowerPoint", "Title slide with the lockups and NeGot on a white badge; closing slide with NeGot and a white Connect panel of linked logos; author property = brand"],
+        ["Word / Excel", "Title page or first sheet with the lockups and brand line; author property = brand"],
+        ["Website and HTML pages", "Logo as favicon, lockups in the header, NeGot and the Connect row in the footer, branded title and author meta"],
     ], [0.27, 0.73])
     s += h1("Making a new branded PDF")
     s += code('import sys; sys.path.insert(0, "zz-Brand-Assets/pdf-kit")\nfrom brand_pdf import build, h1, p, bullets, table, code, callout, flow\n\n'
               'build("Phase-008-Example/Example.pdf",\n      folder="Phase-008-Example", title="Example",\n'
               '      subtitle="One-line purpose", facts=[("Document", "Phase explainer"), ("Folder", "Phase-008-Example")],\n'
               '      story=[h1("What it is"), p("..."), bullets(["...", "..."])])', "zz-Brand-Assets/pdf-kit")
-    s.append(p("Existing PDFs are re-branded with `rebrand_existing.py`, which replaces only the header and footer bands and never touches body pages."))
+    s.append(p("New folders use a short Markdown source in `pdf-kit/explainers/` and `build_explainers.py`. Existing PDFs keep their pages: `rebrand_existing.py` replaced only their header and footer bands and `apply_covers.py` gives them the brand cover. The full run order of all tools is in `pdf-kit/README.md`."))
     return dict(out=REPO / "zz-Brand-Assets" / "Brand-Guidelines.pdf", folder="zz-Brand-Assets", title="Brand Guidelines",
-                short="Brand Guidelines", subtitle="How the four brand assets, the palette and the exact brand name are used across the repository",
-                facts=[("Document", "Brand guide"), ("Assets", "Logo · Name lockup · Brand strip · NeGot"),
+                short="Brand Guidelines", subtitle="How the brand assets, the official links, the palette and the exact brand name are used across the repository",
+                facts=[("Document", "Brand guide"), ("Assets", "Logo · Name lockup · Brand strip · NeGot · Hero banner"),
+                       ("Official links", "8 — Website, Email, LinkedIn, GitHub, Hugging Face, YouTube, X, Higgsfield AI"),
                        ("Palette", "#FF4A62 → #FF5A45 · #031273 · #F2F4FF · no black"),
                        ("Folder", "zz-Brand-Assets")],
                 story=s, kicker="Shasu Vathanan  ·  Personal brand", keywords="brand, NeGot, palette, logo")

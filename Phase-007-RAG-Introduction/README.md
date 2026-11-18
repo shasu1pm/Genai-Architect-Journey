@@ -61,7 +61,7 @@ The infographic [Embeddings, Vectors, Binary and RAG Explained.png](./Embeddings
 
 ## Concept notebooks
 
-| # | Notebook | What you learn |
+| # | Notebook / guide | What you learn |
 | :-- | :-- | :-- |
 | 01 | [01_What_is_RAG_and_Why.ipynb](./01_What_is_RAG_and_Why.ipynb) | The problem RAG solves, the basic flow, and why it is used |
 | 02 | [02_RAG_Types.ipynb](./02_RAG_Types.ipynb) | Basic (naive) RAG and an overview of the advanced RAG types |
@@ -69,8 +69,11 @@ The infographic [Embeddings, Vectors, Binary and RAG Explained.png](./Embeddings
 | 04 | [04_Corrective_RAG.ipynb](./04_Corrective_RAG.ipynb) | **Corrective RAG (CRAG)** — grade the retrieved documents, then correct weak results |
 | 05 | [05_Fusion_RAG.ipynb](./05_Fusion_RAG.ipynb) | **Fusion RAG** — several query variants combined with Reciprocal Rank Fusion (RRF) |
 | 06 | [06_BM25_Rerank.ipynb](./06_BM25_Rerank.ipynb) | **BM25** keyword search vs semantic search, and **reranking** the retrieved results |
+| Guide | [Multimodal-Retriever-Concepts-and-Architecture.pdf](./Multimodal-Retriever-Concepts-and-Architecture.pdf) | **Multimodal retrieval** — how retrieval works across text, documents, images, audio and video: architecture, recommended tools, hybrid search, storing vs persisting, and a step-by-step implementation workflow |
 
 Notebooks 01–05 explain each idea with flow diagrams and short code sketches (notebook 05 includes a small Reciprocal Rank Fusion scoring example); notebook 06 runs a BM25 keyword search with `rank-bm25`.
+
+The multimodal retriever guide is built from [docs/build_multimodal.py](./docs/build_multimodal.py): run `python Phase-007-RAG-Introduction/docs/build_multimodal.py` from the repository root after editing its text. It needs `reportlab`, `pymupdf` and `pillow`, reuses the brand engine in `zz-Brand-Assets/pdf-kit/`, and checks that every source word, table cell and diagram label is in the PDF.
 
 | | Self RAG | Corrective RAG | Fusion RAG |
 | :-- | :-- | :-- | :-- |
@@ -131,12 +134,13 @@ python rag_faiss_app.py     # type 'exit' to stop
 | [Phase-005-LLM-Foundations-and-Practical-Tools](../Phase-005-LLM-Foundations-and-Practical-Tools/) | LLM foundations and practical tools | [📄 PDFs](../Phase-005-LLM-Foundations-and-Practical-Tools/) |
 | [Phase-006-LangChain-Ecosystem](../Phase-006-LangChain-Ecosystem/) | LangChain building blocks and model integration | [📄 PDF](../Phase-006-LangChain-Ecosystem/LangChain-Ecosystem-Explainer.pdf) |
 | **Phase-007-RAG-Introduction** | **Retrieval-Augmented Generation — concepts, types and working demos** | [📄 PDF](./RAG-Introduction-Explainer.pdf) |
+| [Phase-008-RAG-Agent-Explained](../Phase-008-RAG-Agent-Explained/) | RAG as a tool for an AI agent — CrewAI + MCP + ChromaDB, with a chat UI and an API | [📄 PDF](../Phase-008-RAG-Agent-Explained/RAG-Agent-Explained-Explainer.pdf) |
 
 ## Navigation
 
 | Previous | Index | Next |
 | :-- | :--: | --: |
-| [← Phase-006-LangChain-Ecosystem](../Phase-006-LangChain-Ecosystem/) | [Journey index](../README.md) | Next phase (coming next) |
+| [← Phase-006-LangChain-Ecosystem](../Phase-006-LangChain-Ecosystem/) | [Journey index](../README.md) | [Phase-008-RAG-Agent-Explained →](../Phase-008-RAG-Agent-Explained/) |
 
 $\textcolor{#FF4A62}{\rule{20em}{2pt}}$
 

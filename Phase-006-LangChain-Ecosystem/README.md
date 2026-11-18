@@ -18,7 +18,7 @@ $\textcolor{#FF4A62}{\rule{26em}{4pt}}$
 
 Phase-005-LLM-Foundations-and-Practical-Tools explained what a model is and how to run one. This phase puts a framework around the model. **LangChain** gives each step of an AI application a standard component, so a document can be loaded, split, embedded, stored, searched, and passed to any chat model with the same few lines of Python.
 
-Nine beginner-friendly notebooks in two tracks, written to be run top to bottom.
+Nine beginner-friendly notebooks in two tracks, written to be run top to bottom, and a third track with a working project that compares **LangChain, LangGraph and LangSmith** behind a **FastAPI** service.
 
 ---
 
@@ -28,8 +28,9 @@ Nine beginner-friendly notebooks in two tracks, written to be run top to bottom.
 | :-- | :-- | :-- | :-- |
 | 1 | **LangChain Components** | The seven building blocks of a retrieval (RAG) app, one notebook each | [Open](./Langchain-Components/) |
 | 2 | **Advanced Model Integration** | Connecting LangChain to OpenAI, Ollama, Claude and Gemini, and talking to them with messages | [Open](./Langchain_Advanced_Model_Integration/) |
+| 3 | **LangChain vs LangGraph vs LangSmith Explained** | Build · Orchestrate · Observe — the **AI Learning Assistant**: LangChain chains, a LangGraph workflow, optional LangSmith tracing, served with FastAPI | [Open](./LangChain%20vs%20LangGraph%20vs%20LangSmith%20Explained/) |
 
-**Explainer PDFs:** [📄 LangChain-Ecosystem-Explainer.pdf](./LangChain-Ecosystem-Explainer.pdf) (this phase) · [📄 LangChain-Components-Explainer.pdf](./Langchain-Components/LangChain-Components-Explainer.pdf) · [📄 LangChain-Advanced-Model-Integration-Explainer.pdf](./Langchain_Advanced_Model_Integration/LangChain-Advanced-Model-Integration-Explainer.pdf)
+**Explainer PDFs:** [📄 LangChain-Ecosystem-Explainer.pdf](./LangChain-Ecosystem-Explainer.pdf) (this phase) · [📄 LangChain-Components-Explainer.pdf](./Langchain-Components/LangChain-Components-Explainer.pdf) · [📄 LangChain-Advanced-Model-Integration-Explainer.pdf](./Langchain_Advanced_Model_Integration/LangChain-Advanced-Model-Integration-Explainer.pdf) · [📄 LangChain-vs-LangGraph-vs-LangSmith-Explained-Explainer.pdf](./LangChain%20vs%20LangGraph%20vs%20LangSmith%20Explained/LangChain-vs-LangGraph-vs-LangSmith-Explained-Explainer.pdf)
 
 ---
 
@@ -48,7 +49,7 @@ Nine beginner-friendly notebooks in two tracks, written to be run top to bottom.
 | :-- | :-- |
 | [0-Block diagram of the LangChain ecosystem.png](./0-Block%20diagram%20of%20the%20LangChain%20ecosystem.png) | The LangChain stack — LangChain-Core, LangChain-Community, LangChain, Templates, LangServe and LangSmith |
 | [1-Langchain components.jpg](./1-Langchain%20components.jpg) | Components of LangChain (credited *@Product Mindset* on the image) — Retrieval, LLMs, Memory, Prompt Templates and Agents feeding Chains |
-| [2-Langchain components.png](./2-Langchain%20components.png) | A component tree — Models, Prompts, Indexes, Memory, Chains and Agents with their sub-parts |
+| [Langchain components.png](./Langchain%20components.png) | A component tree — Models, Prompts, Indexes, Memory, Chains and Agents with their sub-parts |
 
 ---
 
@@ -95,6 +96,16 @@ Supporting files: [requirements.txt](./Langchain-Components/requirements.txt) ·
 
 Supporting files: [requirements.txt](./Langchain_Advanced_Model_Integration/requirements.txt) · [.env.example](./Langchain_Advanced_Model_Integration/.env.example).
 
+## Track 3 — LangChain vs LangGraph vs LangSmith Explained
+
+| Tool | Remember it as | In the project |
+| :-- | :-- | :-- |
+| **LangChain** | **Build** | Prompt templates → chat model → Pydantic output parser; `POST /ask` uses one chain on its own |
+| **LangGraph** | **Orchestrate** | A `StateGraph` — classify → explain → add example → validate, with conditional routing, a bounded retry and a fallback (`POST /workflow`) |
+| **LangSmith** | **Observe** | Optional tracing of every run (a `trace_id` per workflow run) and a small evaluation script |
+
+The **AI Learning Assistant** answers educational questions with a beginner-friendly explanation, key points and a real-world example, served by **FastAPI** (`/health`, `/ask`, `/workflow`, Swagger UI at `/docs`). It runs in a deterministic **mock mode** without any key, with OpenAI, or with a free local Ollama model (tested with `qwen2.5:0.5b`), and comes with offline and real-model tests. Open the [track README](./LangChain%20vs%20LangGraph%20vs%20LangSmith%20Explained/), the [infographic](./LangChain%20vs%20LangGraph%20vs%20LangSmith%20Explained/LangChain%20vs%20LangGraph%20vs%20LangSmith%20Explained.png) and the [complete guide](./LangChain%20vs%20LangGraph%20vs%20LangSmith%20Explained/docs/LangChain-LangGraph-LangSmith-Guide.pdf).
+
 ---
 
 ## Running the notebooks
@@ -120,6 +131,7 @@ Open a notebook in VS Code or Jupyter and run the cells in order. Use the same s
 - A retrieval app is six swappable steps: **load → split → embed → store → retrieve → answer**.
 - Changing provider is usually a one-line change of the chat-model class.
 - Tracing with LangSmith makes each step visible, so problems can be debugged instead of guessed.
+- **LangChain builds, LangGraph orchestrates, LangSmith observes** — a prompt can ask for steps; a graph guarantees them.
 
 ---
 
@@ -134,6 +146,7 @@ Open a notebook in VS Code or Jupyter and run the cells in order. Use the same s
 | [Phase-005-LLM-Foundations-and-Practical-Tools](../Phase-005-LLM-Foundations-and-Practical-Tools/) | LLM foundations and practical tools | [📄 PDFs](../Phase-005-LLM-Foundations-and-Practical-Tools/) |
 | **Phase-006-LangChain-Ecosystem** | **LangChain building blocks and model integration** | [📄 PDF](./LangChain-Ecosystem-Explainer.pdf) |
 | [Phase-007-RAG-Introduction](../Phase-007-RAG-Introduction/) | Retrieval-Augmented Generation — concepts, types and working demos | [📄 PDF](../Phase-007-RAG-Introduction/RAG-Introduction-Explainer.pdf) |
+| [Phase-008-RAG-Agent-Explained](../Phase-008-RAG-Agent-Explained/) | RAG as a tool for an AI agent — CrewAI + MCP + ChromaDB, with a chat UI and an API | [📄 PDF](../Phase-008-RAG-Agent-Explained/RAG-Agent-Explained-Explainer.pdf) |
 
 ## Navigation
 

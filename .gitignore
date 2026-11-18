@@ -1,0 +1,50 @@
+# Genai-Architect-Journey — repository-wide ignores
+# (Phase folders keep their own .gitignore files for project-specific outputs.)
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+
+# Python-generated files and notebook checkpoints
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.ipynb_checkpoints/
+
+# Caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Secrets and local config — only .env.example files are committed
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+
+# Editors / OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs, temp files, design sources
+*.log
+*.tmp
+*.tmp.pdf
+*.psd
+
+# Private working documents — kept outside the published repository
+Master-My-GitHub-Branding-Instruction*.md
+My-GitHub-Branding-Instruction*.md
+Key-Notes.xlsx
+All-Phase.xlsx
+
+# Source transcripts used only to write documentation — never published
+*Transcript*.txt

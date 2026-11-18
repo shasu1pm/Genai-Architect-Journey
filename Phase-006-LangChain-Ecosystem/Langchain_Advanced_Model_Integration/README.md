@@ -54,9 +54,9 @@ The optional providers are commented out in [requirements.txt](./requirements.tx
 
 ## Navigation
 
-| Previous track | Index | Up |
+| Previous track | Up · Index | Next track |
 | :-- | :--: | --: |
-| [← LangChain Components](../Langchain-Components/) | [Journey index](../../README.md) | [Phase-006-LangChain-Ecosystem](../) |
+| [← LangChain Components](../Langchain-Components/) | [Phase-006-LangChain-Ecosystem](../) · [Journey index](../../README.md) | [LangChain vs LangGraph vs LangSmith →](../LangChain%20vs%20LangGraph%20vs%20LangSmith%20Explained/) |
 
 $\textcolor{#FF4A62}{\rule{20em}{2pt}}$
 

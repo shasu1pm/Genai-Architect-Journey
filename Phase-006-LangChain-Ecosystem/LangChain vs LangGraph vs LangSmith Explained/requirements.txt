@@ -1,0 +1,15 @@
+# Exact versions this project was tested with (Python 3.13, Windows 11).
+# Install:  python -m pip install -r requirements.txt
+langchain==1.5.0
+langchain-core==1.8.2
+langchain-openai==1.8.1
+langchain-ollama==1.1.0
+langgraph==1.2.22
+langsmith==0.15.0
+fastapi==0.163.2
+uvicorn==0.54.0
+pydantic==2.14.3
+python-dotenv==1.2.4
+# tests
+pytest==9.2.0
+httpx==0.28.1

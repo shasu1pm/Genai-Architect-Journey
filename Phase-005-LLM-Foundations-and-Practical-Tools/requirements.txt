@@ -38,3 +38,9 @@ typing_extensions==4.15.0
 tzdata==2026.2
 urllib3==2.7.0
 Werkzeug==3.1.8
+
+# Needed by opensource.py (Topic 08 — run a Hugging Face model locally; device_map needs accelerate)
+transformers
+torch
+huggingface_hub
+accelerate

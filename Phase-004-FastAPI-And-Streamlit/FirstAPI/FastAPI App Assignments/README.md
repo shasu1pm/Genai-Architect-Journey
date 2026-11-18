@@ -43,7 +43,7 @@ The API provides:
 | [Interactive documentation](#interactive-api-documentation) | Swagger UI and ReDoc |
 | [Testing](#test-with-a-browser-curl-or-postman) | Browser, curl, and the Postman collection |
 | [Status codes](#expected-status-codes) | What each response code means |
-| [Assignment checklist](#assignment-checklist) | Requirements met |
+| [Build checklist](#build-checklist) | Requirements met |
 
 ---
 

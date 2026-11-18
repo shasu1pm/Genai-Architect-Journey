@@ -13,6 +13,9 @@ ROOT = Path(sys.argv[1]).resolve()
 ASSETS = "zz-Brand-Assets"
 SKIP_DIRS = {".git", "venv", ".venv", "__pycache__", "node_modules", "explainers"}
 SKIP_FILES = {"My-GitHub-Branding-Instruction.md"}
+# Private branding instructions (every edition, e.g. "Master-My-GitHub-Branding-Instruction[18-11-26].md")
+# are never branded or rewritten by this tool.
+PROTECTED = re.compile(r"^(master-)?my-github-branding-instruction.*\.md$", re.IGNORECASE)
 BRAND = "Shasu Vathanan - GEN AI - Product Manager"
 changed = []
 
@@ -26,7 +29,7 @@ def walk(ext):
     for dp, dns, fns in os.walk(ROOT):
         dns[:] = [d for d in dns if d not in SKIP_DIRS]
         for f in fns:
-            if f.endswith(ext) and f not in SKIP_FILES:
+            if f.endswith(ext) and f not in SKIP_FILES and not PROTECTED.match(f):
                 yield Path(dp) / f
 
 
@@ -37,6 +40,8 @@ def read(p):
 
 
 def write(p, text, nl):
+    if PROTECTED.match(p.name):          # second safeguard: refuse to write a protected instruction file
+        raise RuntimeError(f"Refusing to modify protected instruction file: {p.name}")
     p.write_bytes(text.replace("\n", nl).encode("utf-8"))
     changed.append(str(p.relative_to(ROOT)))
 
